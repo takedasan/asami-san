@@ -7,7 +7,7 @@ Oculus Quest版のVRChatで自分が使う用のモデルです。
 元の三面図  
 * asami-san.blend
 モデルファイル  
-* 各種PNG
+* tex_img.png
 テクスチャファイル  
 
 ### モデル
@@ -29,17 +29,17 @@ BlenderからエクスポートでFBXファイルをエクスポート。
 (あとで、Unity上でも削除できるのでめんどくさかったらやらなくてもOK)  
 
 1. アセットの読み込み  
-`Import New Assets`でFBXファイルと各種テクスチャPNGファイルをインポート。  
+`Import New Assets`でFBXファイルとテクスチャPNGファイルをインポート。  
 
 1. テクスチャのShader設定  
 FBXファイルを選択して、MaterialsからLocationを`Use External Materials`に変える。  
 ![image](https://user-images.githubusercontent.com/33456217/57137756-c7e61e80-6deb-11e9-9c41-0af334179295.png)  
-FBXファイルを展開してbody/hair/head/kara/wappenのShaderを`Unlit/Texture`に変える。  
-![image](https://user-images.githubusercontent.com/33456217/57137902-29a68880-6dec-11e9-885b-2540e17162ae.png)  
+FBXファイルを展開してbodyのShaderを`Unlit/Texture`に変える。  
+![image](https://user-images.githubusercontent.com/33456217/57981888-9e2e2800-7a78-11e9-9a2b-7fb435ea0f79.PNG)  
 
 1. Rigの設定  
 FBXファイルを選択して、RigからAnimation Typeを`Humanoid`に変えて、Applyを押す。  
-![image](https://user-images.githubusercontent.com/33456217/57138021-886c0200-6dec-11e9-8cfd-cf67c5c1da95.png)
+![image](https://user-images.githubusercontent.com/33456217/57138021-886c0200-6dec-11e9-8cfd-cf67c5c1da95.png)  
 Configure...ボタンを押して、設定を確認する。  
 `Chest`だけ自動設定されてないので、手動で設定する。  
 ![image](https://user-images.githubusercontent.com/33456217/57138171-f4e70100-6dec-11e9-814a-b1680ff04378.png)  
